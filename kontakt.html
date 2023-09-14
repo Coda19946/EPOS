@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jqueryLib.js"></script>
+    <script src="js/backgroundSize.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/d0c6e44d3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
+       <img src="slike/logo.png" alt="">
+     </div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="index.html">Početna</a></li>
+          <li class="/"><a href="prodavnica.html">Poruči</a></li>
+          <li><a href="vesti.html">Vesti</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </div>
+      </ul>
+    </nav>
+    <section class="contact">
+      <div class="content">
+        <h2>Kontaktiraj nas</h2>
+      </div>
+      <div class="container1">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Adresa</h3>
+              <p>Ulica Teodore Drajzera 8</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Telefon</h3>
+              <p>+38169765963</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>Natkit@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Izvrsi kupovinu</h2>
+            <div class="inputBox">
+              <input type="text" id="ime" required="required" />
+              <span>Ime i prezime</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" id="email" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="broj" required="required" />
+                <span>Broj telefona</span>
+              </div>
+              <label for="country">Drzava:</label>
+              <select class="box1" name="country" id="country">
+                <option value="Srbija">Srbija</option>
+                <option value="Makedonija">Makedonija</option>
+                <option value="Crna Gora">Crna Gora</option>
+                <option value="Hrvatska">Hrvatska</option>
+                <option value="none" selected>None</option>
+              </select>
+            <div class="inputBox">
+              <input type="text" id="adresa" required="required" />
+              <span>Adresa</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" id="grad" required="required" />
+              <span>Grad</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" id="postanskiBroj" required="required" />
+              <span>Postanski broj</span>
+            </div>
+            <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="box message"
+            placeholder="Dodatni zahtevi i pitanja: "
+          ></textarea>
+            <div id="porukaIspisa" class="inputBox">
+              <button onclick="posalji(this)">Posalji</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+<footer>
+  <div class="footer-container">
+    <div class="left-col">
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/_natkit_/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="rights-text">© 2020 Created By DJM All Rights Reserved.</p>
+      <div class="credit">Made with <span style="color:rgb(255, 105, 71);font-size:20px;">❤</span> by <a  href="#">DJM</a></div>
+    </div>
+    <div class="mid-col">
+      <img src="slike/logo.png" alt="" class="futerlogo">
+    </div>
+    <div class="right-col">
+      <h1>Newsletter</h1>
+      <div class="border"></div>
+      <br><p>Prijavi se</p>
+      <form action="" class="newsletter-form">
+        <input type="text" class="txtb" placeholder="Unesi svoj email">
+        <input type="submit" class="btn" value="submit">
+      </form>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

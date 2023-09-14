@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+  <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">
+      <img src="slike/logo.png" alt="">
+    </div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="index.html">Početna</a></li>
+         <li class="/"><a href="prodavnica.html">Poruči</a></li>
+         <li><a href="vesti.html">Vesti</a></li>
+         <li><a href="kontakt.html">Kontakt</a></li>
+       </div>
+     </ul>
+   </nav>
+  <body>
+    
+    <div class="container">
+      <div class="ponuda">
+        <div class="proizvod">
+          <img class="prodavnicaslike" src="slike/Leptir.jpg" alt="Leptir" />
+          <div class="naziv1">
+            <h3>Leptir</h3>
+            <p>Cena: 10$</p>
+          </div>
+          <div class="dugme">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button onclick="addToCart(this)">Dodaj</button>
+          </div>
+        </div>
+        <div class="proizvod">
+          <img class="prodavnicaslike" src="slike/Zmija.jpg" alt="Zmija" />
+          <div class="naziv2">
+            <h3>Zmija</h3>
+            <p>Cena: 8$</p>
+          </div>
+          <div class="dugme">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button onclick="addToCart(this)">Dodaj</button>
+          </div>
+        </div>
+        <div class="proizvod">
+          <img class="prodavnicaslike" id="poslednji" src="slike/Ukras.jpg" alt="Ukras" />
+          <div class="naziv3">
+            <h3>Narukvica</h3>
+            <p>Cena: 15$</p>
+          </div>
+          <div class="dugme">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button onclick="addToCart(this)">Dodaj</button>
+          </div>
+        </div>
+      </div>
+      <div class="prodaja">
+        <h2>Korpa</h2>
+        <div class="cart-items"></div>
+        <div class="total"></div>
+        <div class="izvrsiKupovinu"></div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_natkit_/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p class="rights-text">© 2020 Created By DJM All Rights Reserved.</p>
+          <div class="credit">Made with <span style="color:rgb(255, 105, 71);font-size:20px;">❤</span> by <a  href="#">DJM</a></div>
+        </div>
+        <div class="mid-col">
+          <img src="slike/logo.png" alt="" class="futerlogo">
+        </div>
+        <div class="right-col">
+          <h1>Newsletter</h1>
+          <div class="border"></div>
+          <br><p>Prijavi se</p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="txtb" placeholder="Unesi svoj email">
+            <input type="submit" class="btn" value="submit">
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
